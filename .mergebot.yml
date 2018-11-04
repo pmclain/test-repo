@@ -1,4 +1,7 @@
 pullRequest:
+  closed:
+    releaseMe:
+      targetBranch: 'master'
   opened:
     autoMerge:
       mergeCondition:
