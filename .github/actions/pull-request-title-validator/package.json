@@ -1,0 +1,31 @@
+{
+  "name": "pull-request-title-validator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Validate requests conform to title standards",
+  "main": "src/main.js",
+  "scripts": {
+    "format": "prettier --write **/*.js",
+    "format-check": "prettier --check **/*.js",
+    "test": "jest",
+    "build": "ncc build src/main.js -o dist"
+  },
+  "keywords": [
+    "actions",
+    "node",
+    "setup"
+  ],
+  "author": "Patrick McLain <interactive@somethingdigital.com>",
+  "license": "proprietary",
+  "dependencies": {
+    "@actions/core": "^1.0.0",
+    "@actions/github": "^1.0.0",
+    "js-yaml": "^3.13.1",
+    "semver": "^6.1.1"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "prettier": "^1.17.1",
+    "@zeit/ncc": "^0.20.5"
+  }
+}
