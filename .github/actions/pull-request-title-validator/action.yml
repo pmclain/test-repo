@@ -1,0 +1,9 @@
+name: 'Pull Request Title Validator'
+description: 'Validate requests conform to title standards'
+author: 'GitHub'
+inputs:
+  repo-token:
+    description: 'The GITHUB_TOKEN secret'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
