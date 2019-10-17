@@ -1,0 +1,11 @@
+name: Title Validator
+on: [pull_request]
+
+jobs:
+  validate-title:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: ./.github/actions/pull-request-title-validator
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
