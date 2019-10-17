@@ -9,3 +9,5 @@ jobs:
     - uses: ./.github/actions/pull-request-title-validator
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+
+
